@@ -11,6 +11,7 @@
         <plugin interceptor="com.ift.mybatis.plugin.ThresholdPlugin">
             <property name="threshold" value="10"/>
         </plugin>
+        <plugin interceptor="com.ift.mybatis.plugin.DataScopePlugin"/>
     </plugins>
     <environments default="development">
         <environment id="development">

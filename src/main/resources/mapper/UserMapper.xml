@@ -16,7 +16,16 @@
         select
             <include refid="BaseColumn"/>
         from t_user
-        where id = #{id}
+        <where>
+            ${dsSql}
+        </where>
+    </select>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumn"/>
+        from t_user
+        where id = '1'
     </select>
 
     <insert id="insert" parameterType="com.ift.mybatis.entity.User">

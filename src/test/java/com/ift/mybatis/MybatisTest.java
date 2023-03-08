@@ -30,6 +30,7 @@ public class MybatisTest {
 //        System.out.println(o);
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         User user = userMapper.selectByPrimaryKey(1L);
+//        User user = userMapper.selectById();
         System.out.println(user);
     }
 
